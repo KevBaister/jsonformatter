@@ -1,9 +1,30 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>JSON Formatter</title>
+    <link href="../Content/normalize.min.css" rel="stylesheet" />
+    <link href="/Content/site.min.css" rel="stylesheet" />
 </head>
-<body>
-    
-</body>
+    <body>
+        <h1>JSON Formatter</h1>
+        <div class="editor">
+            <p>JSON:</p>
+            <p><textarea id="raw-json"></textarea></p>
+        </div>
+        <div class="settings">
+            <p>Spacing:</p>
+            <p>
+                <select id="spacing">
+                    <option value="2">2 spaces</option>
+                    <option value="4">4 spaces</option>
+                    <option value="tab" selected="selected">Tab</option>
+                </select>
+            </p>
+            <p><button id="format">Format</button> <button id="clear">Clear</button></p>
+        </div>
+        
+        <script src="/Content/scripts/jquery.min.js"></script>
+        <script src="/Content/scripts/json3.min.js"></script>
+        <script src="/Content/scripts/app.min.js"></script>
+    </body>
 </html>

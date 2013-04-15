@@ -65,6 +65,24 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\normalize.css">
+      <DependentUpon>normalize.less</DependentUpon>
+    </Content>
+    <Content Include="Content\normalize.min.css">
+      <DependentUpon>normalize.less</DependentUpon>
+    </Content>
+    <Content Include="Content\scripts\app.js" />
+    <Content Include="Content\scripts\app.min.js">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
+    <Content Include="Content\scripts\jquery.min.js" />
+    <Content Include="Content\scripts\json3.min.js" />
+    <Content Include="Content\site.css">
+      <DependentUpon>site.less</DependentUpon>
+    </Content>
+    <Content Include="Content\site.min.css">
+      <DependentUpon>site.less</DependentUpon>
+    </Content>
     <Content Include="Views\index.htm" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -74,6 +92,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Content\site.less" />
+    <Content Include="Content\normalize.less" />
+    <Content Include="Content\scripts\app.min.js.map">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
