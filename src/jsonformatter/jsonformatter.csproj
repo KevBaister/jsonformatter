@@ -65,12 +65,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\normalize.css">
-      <DependentUpon>normalize.less</DependentUpon>
-    </Content>
-    <Content Include="Content\normalize.min.css">
-      <DependentUpon>normalize.less</DependentUpon>
-    </Content>
+    <Content Include="Content\bootstrap-responsive.css" />
+    <Content Include="Content\bootstrap-responsive.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\glyphicons-halflings-white.png" />
+    <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\scripts\app.js" />
     <Content Include="Content\scripts\app.min.js">
       <DependentUpon>app.js</DependentUpon>
@@ -83,6 +83,8 @@
     <Content Include="Content\site.min.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
+    <Content Include="Content\scripts\bootstrap.js" />
+    <Content Include="Content\scripts\bootstrap.min.js" />
     <Content Include="Views\index.htm" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -93,7 +95,6 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="Content\site.less" />
-    <Content Include="Content\normalize.less" />
     <Content Include="Content\scripts\app.min.js.map">
       <DependentUpon>app.js</DependentUpon>
     </Content>

@@ -2,28 +2,33 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>JSON Formatter</title>
-    <link href="../Content/normalize.min.css" rel="stylesheet" />
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="/Content/site.min.css" rel="stylesheet" />
 </head>
     <body>
-        <h1>JSON Formatter</h1>
-        <div class="editor">
-            <p>JSON:</p>
-            <p><textarea id="raw-json"></textarea></p>
+        <div class="container-fluid">
+            <h1>JSON Formatter</h1>
+            <div class="row-fluid">
+                <div class="editor span9">
+                    <p>JSON:</p>
+                    <p><textarea id="raw-json"></textarea></p>
+                </div>
+                <div class="settings span3">
+                    <p>Spacing:</p>
+                    <p>
+                        <select id="spacing">
+                            <option value="2" selected="selected">2 spaces</option>
+                            <option value="4">4 spaces</option>
+                            <option value="tab">Tab</option>
+                        </select>
+                    </p>
+                    <p><button id="format" class="btn btn-primary">Format</button> <button id="clear" class="btn">Clear</button></p>
+                </div>
+            </div>
         </div>
-        <div class="settings">
-            <p>Spacing:</p>
-            <p>
-                <select id="spacing">
-                    <option value="2" selected="selected">2 spaces</option>
-                    <option value="4">4 spaces</option>
-                    <option value="tab">Tab</option>
-                </select>
-            </p>
-            <p><button id="format">Format</button> <button id="clear">Clear</button></p>
-        </div>
-        
+
         <script src="/Content/scripts/jquery.min.js"></script>
+        <script src="/Content/scripts/bootstrap.min.js"></script>
         <script src="/Content/scripts/json3.min.js"></script>
         <script src="/Content/scripts/app.min.js"></script>
     </body>
