@@ -3,6 +3,8 @@
 <head>
     <title>JSON Formatter</title>
     <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/scripts/codemirror/lib/codemirror.css" rel="stylesheet" />
+    <link href="/Content/scripts/codemirror/theme/ambiance.css" rel="stylesheet" />
     <link href="/Content/site.min.css" rel="stylesheet" />
 </head>
     <body>
@@ -10,7 +12,6 @@
             <h1>JSON Formatter</h1>
             <div class="row-fluid">
                 <div class="editor span9">
-                    <p>JSON:</p>
                     <p><textarea id="raw-json"></textarea></p>
                 </div>
                 <div class="settings span3">
@@ -30,6 +31,8 @@
         <script src="/Content/scripts/jquery.min.js"></script>
         <script src="/Content/scripts/bootstrap.min.js"></script>
         <script src="/Content/scripts/json3.min.js"></script>
+        <script src="/Content/scripts/codemirror/lib/codemirror.js"></script>
+        <script src="/Content/scripts/codemirror/mode/javascript/javascript.js"></script>
         <script src="/Content/scripts/app.min.js"></script>
     </body>
 </html>
