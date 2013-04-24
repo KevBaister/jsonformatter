@@ -85,6 +85,44 @@
     </Content>
     <Content Include="Content\scripts\bootstrap.js" />
     <Content Include="Content\scripts\bootstrap.min.js" />
+    <Content Include="Content\scripts\codemirror\lib\codemirror.css" />
+    <Content Include="Content\scripts\codemirror\lib\codemirror.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\closetag.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\continuecomment.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\continuelist.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\dialog.css" />
+    <Content Include="Content\scripts\codemirror\lib\util\dialog.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\foldcode.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\formatting.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\javascript-hint.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\loadmode.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\match-highlighter.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\multiplex.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\overlay.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\pig-hint.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\runmode-standalone.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\runmode.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\search.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\searchcursor.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\simple-hint.css" />
+    <Content Include="Content\scripts\codemirror\lib\util\simple-hint.js" />
+    <Content Include="Content\scripts\codemirror\lib\util\xml-hint.js" />
+    <Content Include="Content\scripts\codemirror\mode\javascript\javascript.js" />
+    <Content Include="Content\scripts\codemirror\theme\ambiance-mobile.css" />
+    <Content Include="Content\scripts\codemirror\theme\ambiance.css" />
+    <Content Include="Content\scripts\codemirror\theme\blackboard.css" />
+    <Content Include="Content\scripts\codemirror\theme\cobalt.css" />
+    <Content Include="Content\scripts\codemirror\theme\eclipse.css" />
+    <Content Include="Content\scripts\codemirror\theme\elegant.css" />
+    <Content Include="Content\scripts\codemirror\theme\erlang-dark.css" />
+    <Content Include="Content\scripts\codemirror\theme\lesser-dark.css" />
+    <Content Include="Content\scripts\codemirror\theme\monokai.css" />
+    <Content Include="Content\scripts\codemirror\theme\neat.css" />
+    <Content Include="Content\scripts\codemirror\theme\night.css" />
+    <Content Include="Content\scripts\codemirror\theme\rubyblue.css" />
+    <Content Include="Content\scripts\codemirror\theme\twilight.css" />
+    <Content Include="Content\scripts\codemirror\theme\vibrant-ink.css" />
+    <Content Include="Content\scripts\codemirror\theme\xq-dark.css" />
     <Content Include="Views\index.htm" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -98,6 +136,7 @@
     <Content Include="Content\scripts\app.min.js.map">
       <DependentUpon>app.js</DependentUpon>
     </Content>
+    <Content Include="Content\scripts\codemirror\LICENSE" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

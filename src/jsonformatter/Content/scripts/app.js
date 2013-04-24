@@ -1,9 +1,12 @@
 ﻿var formatter = (function () {
 
-    var $editor;
+    var editor;
 
     var init = function() {
-        $editor = $('#raw-json');
+        editor = CodeMirror.fromTextArea($('#raw-json')[0], {
+            theme: 'ambiance',
+            lineNumbers: true
+        });
 
         $('#format').click(onFormatClicked);
         $('#clear').click(onClearClicked);
@@ -11,7 +14,7 @@
 
     var onFormatClicked = function () {
 
-        var jsonData = $editor.val();
+        var jsonData = editor.getValue();
         
         if (jsonData !== '') {
             var spacing = $('#spacing').val();
@@ -23,8 +26,8 @@
             }
 
             try {
-                var parsedJson = JSON.parse($editor.val());
-                $editor.val(JSON.stringify(parsedJson, null, spacing));
+                var parsedJson = JSON.parse(jsonData);
+                editor.setValue(JSON.stringify(parsedJson, null, spacing));
             } catch(e) {
                 alert('The JSON you have entered does not appear to be valid.');
             } 
@@ -33,7 +36,7 @@
     };
 
     var onClearClicked = function() {
-        $editor.val('');
+        editor.setValue('');
     };
 
     return {
